@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import path from "path"
 import url from "url"
 
+const __dirname=path.dirname(url.fileURLToPath(import.meta.url))
+
 const PORT = process.env.PORT || 3000;
 const app=express();
 app.set('view engine', 'ejs');
