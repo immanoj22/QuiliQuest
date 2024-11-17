@@ -1,0 +1,19 @@
+<%- include("partial/header.ejs") %>
+
+<div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="image/success.png" alt="" width="72" height="70">
+        <h1 class="display-5 fw-bold text-body-emphasis">Post Successfully Created!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Your new post has been added to the blog. If you need to make any changes, you can quickly edit the post by clicking the button below. You can also view your post to see how it looks on the site. Thank you for contributing your thoughts and creativity!</p>
+
+          <div>
+            <form action="/viewthepost/:<%=htmloflist %>" method="get" style="display:inline;"> 
+              <button type="submit" class="btn btn-lg px-4">view Post</button>
+          </div>
+
+     
+          
+        </div>
+</div>
+
+<%- include("partial/footer.ejs") %>

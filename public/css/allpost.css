@@ -1,0 +1,65 @@
+.btun{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    color: black;
+    background-color:rgba(255, 166, 0, 0.712);
+    border-radius: 3px;
+
+}
+.btunm{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    color: black;
+    background-color:rgba(255, 166, 0, 0.712);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.btunmr{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    color: black;
+    background-color:rgba(255, 166, 0, 0.712);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.btun:hover{
+    color:rgb(0, 0, 0);
+    background-color:white;
+}
+.btunm:hover{
+    color:rgb(0, 0, 0);
+    background-color:white;
+
+}
+.btunmr:hover{
+    color:rgb(0, 0, 0);
+    background-color:white;
+}
+.btun:active{
+    color:rgb(0, 0, 0);
+    background-color:rgba(255, 166, 0, 0.425);
+}
+.btunm:active{
+    color:rgb(0, 0, 0);
+    background-color:rgba(255, 166, 0, 0.425);
+
+}
+.btunmr:active{
+    color:rgb(0, 0, 0);
+    background-color:rgba(255, 166, 0, 0.425);
+}

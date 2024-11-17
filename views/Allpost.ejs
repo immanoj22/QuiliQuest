@@ -1,0 +1,40 @@
+<%- include("partial/header.ejs") %>
+<div class="album py-5 ">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <% htmloflist.forEach(post=>{ %>
+          <%let heading = post.titleofpost%>
+          <% let para=post.contentofpost%>
+          <div class="col">
+            <div class="card shadow-sm">             
+              <div class="card-body">
+                <div class="heading">
+                  <h3 class="card-text"> <%= heading.substring(0,75)+"..." %> </h3>
+                  <hr>  
+                </div>
+                <div class="contentt">
+                    <p > <%= para.substring(0,180)+"...." %></p>
+                </div>
+                                           
+                <div class="d-flex justify-content-between align-items-center"> 
+                  
+                  <div class="btn-group">
+                    <a href="/delethepost/:<%=post.numberofpost %>" type="button" class="btunm btn-sm ">Delete</a>
+                    <a href="/edithepost/:<%=post.numberofpost %>" type="button" class="btunmr btn-sm ">Edit</a>
+                  </div>
+
+                  <a href="/viewthepost/:<%=post.numberofpost %>" type="button" class="btun btn-sm ">View</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        <% }) %> 
+        
+      </div>
+                
+    </div>
+</div>
+
+<%- include("partial/footer.ejs") %>

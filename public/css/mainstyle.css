@@ -1,0 +1,132 @@
+
+.main-image-container{
+    padding-left:50px;
+}
+.main-container-pc{
+    display: flex;
+    justify-content: center;
+}
+
+.word2{
+    /* color: var(--bs-navbar-brand-hover-color); */
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6f61, #ff9a76, #ffcc66, #9be564, #56d8a7, #60a3bc, #9c7bc8, #ff6f61);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorchange 10s infinite;
+    margin-left: 15px;
+
+    
+}
+.title , .lead{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+@keyframes colorchange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.word1{
+    font-size: 3rem;
+    
+    
+}
+
+
+.newpost-cont{
+    margin-top: 50px;
+    
+    padding-top:15px;
+    padding-bottom: 15px;
+   
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: white;
+    background-color: orange;
+    border-color: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding:8px 10px 8px 10px;
+    border-radius:20px;
+    box-shadow: 1px 1px 10px 1px  rgba(255, 166, 0, 0.445);    
+}
+.btn:hover {
+    color: orange;
+    background-color: rgb(255, 255, 255);
+    border-color: orange;
+}
+
+.svgicon{
+    font-weight: bold;
+    font-size: 40px;
+}
+.main-container-mobile{
+    display: none;
+}
+.main-container-tablet{
+    display: none;
+}
+@media (max-width:995px) {
+    .main-image-container{
+        display: none;
+    }
+}
+
+@media (min-width:580px) and (max-width:770px){
+    .main-container-pc{
+        display: none;
+    }
+    .main-container-tablet{
+        display: block;
+    }
+}
+
+@media (max-width:580px){
+    .main-container-pc{
+        display: none;
+    }
+    .main-container-tablet{
+        display: none;
+    }
+    .main-container-mobile{
+        display: block;
+    }
+    .word1{
+        font-size: 2.5rem;
+    }
+    .word2{
+        font-size: 2.5rem;
+    }
+    .details{
+        margin-top: -20px;
+        letter-spacing: -1px;
+    }
+    .main-container-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .button-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .main-image-container-mobile{
+        width: fit-content;
+        height: 470px;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+}

@@ -1,0 +1,30 @@
+<%- include("partial/header.ejs") %>
+
+
+<div id="newpostpage1">
+
+    <div class="rowss mt-3">
+  
+       <div class="col-12">
+        
+        <form action="/updatedpost/<%=htmloflist %>" method="POST">
+            <div class="mb-3">    
+                <textarea class="form-control heading " style="overflow-y: auto; resize: none;" class="form-control" id="exampleFormControlInput1" rows="2" name="Title" placeholder="Title" ><%= postobject.titleofpost %></textarea>
+              </div>
+              <div class="mb-3">          
+                <textarea class="form-control newposttext" style="overflow-y: auto;" id="exampleFormControlTextarea1" name="content" placeholder="Enter the content here" ><%= postobject.contentofpost %></textarea>
+              </div>
+              <div class="postbtn mb-2 mt-2">
+                 
+                <button type="submit" class="btnn btn-light" > Update </button>
+                
+              </div>
+        </form>
+       </div>
+    </div>
+  
+  </div>
+  
+
+
+<%- include("partial/footer.ejs") %>
